@@ -14,6 +14,7 @@ ul{
 }
 a{
     text-decoration: none;
+    color: #fff;
 }
 /* Utility classes */
 .container{
@@ -30,26 +31,27 @@ a{
     padding: 15px 30px;
     border: none;
     border-radius: 15PX;
+    cursor: pointer;
 }
 .btn-primary{
     color: #fff;
-    border: 1px solid white;
+    border: 1px solid #fff;
 }
 .btn-primary:hover, .btn-secondary:hover{
     background-color: #ff9100;
 }
 /* Header start */
 #navbar{
-    box-sizing: content-box;
-    
     align-items: center;
     display: flex;
     justify-content: space-between;
+    height: 100px;
+    width: 100%;
 }
 
 #navbar img{
     
-    width: 70px;
+    width: 80px;
     margin-left: 100px;
     
 }
@@ -60,7 +62,6 @@ a{
 }
 #navbar ul li a{
     padding: 15px 20px;
-    color: white;
     font-weight: 600;
 }
 #navbar ul li a:hover{
@@ -129,7 +130,7 @@ header *{
     display: flex;
     justify-content: space-between;
 }
-#about .about-content img{
+#about img{
     width: 450px;
 }
 #about .about-content p{
@@ -137,6 +138,9 @@ header *{
     margin-right: 7rem;
     font-weight: 500;
     line-height: 1.6;
+}
+#about .about-content a{
+    margin-top: 2rem;
 }
 .btn-secondary{
     margin-top: 50px;
@@ -236,7 +240,6 @@ header *{
 /* Menu end */
 /* daytime start */
 #daytime{
-    height: 40vh;
     background: url(./daytime_bg.jpeg) center center/cover fixed no-repeat ;
     color: #fff;
     text-align: center;
@@ -358,10 +361,11 @@ footer{
     height: 50px;
 }
 #footer{
+    background-color: #383848;
+    text-align: center;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 15px 0;
+    font-size: 14px;
 }
 #footer a{
     color: #fff;
@@ -411,6 +415,7 @@ footer{
     @media (max-width: 600px){
         #navbar{
             flex-direction: column;
+            
         }
         #navbar ul{
             margin: auto;
@@ -433,7 +438,7 @@ footer{
         #about img {
             display: none;
         }
-        
+    
         #offers {
             height: auto;
             padding: 30px 10px;
